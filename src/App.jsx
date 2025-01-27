@@ -1,15 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import HeroSection from './components/HeroSection'
+import About from './components/About'
 
 
 const App = () => {
   return (
     <main className='relative min-h-screen w-screen overflow-x-hidden'>
       <HeroSection />
+      <About />
 
-
-      <section className='relative w-screen h-screen bg-violet-50' />
+      {/* <section className='relative w-screen h-screen bg-violet-50' /> */}
     </main>
   )
 }
