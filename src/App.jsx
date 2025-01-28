@@ -3,6 +3,7 @@ import React from 'react'
 import HeroSection from './components/HeroSection'
 import About from './components/About'
 import NavBar from './components/NavBar'
+import Features from './components/Features'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <NavBar />
       <HeroSection />
       <About />
+      <Features />
 
       {/* <section className='relative w-screen h-screen bg-violet-50' /> */}
     </main>

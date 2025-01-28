@@ -41,9 +41,7 @@ body {
 
 
 @layer utilities {
-
     
-
     .border-hsla {
         @apply border border-white/20;
     }

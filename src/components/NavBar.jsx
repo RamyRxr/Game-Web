@@ -62,7 +62,7 @@ function NavBar() {
                     <div className="flex h-full items-center">
                         <div className="hidden md:block">
                             {navItems.map((item) => (
-                                <a key={item} className="nav-hover-btn" href={`#${item.toLowerCase()}`}>
+                                <a key={item} className="nav-hover-btn " href={`#${item.toLowerCase()}`}>
                                     {item}
                                 </a>
                             ))}
