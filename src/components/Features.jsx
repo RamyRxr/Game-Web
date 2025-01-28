@@ -23,7 +23,7 @@ const BentoCard = ({ src, title, description, isComingSoon }) => {
             </div>
         </div>
     );
-};
+}; 
 
 BentoCard.propTypes = {
     src: PropTypes.string.isRequired,
