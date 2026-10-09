@@ -17,7 +17,11 @@ const HeroSection = () => {
     const [loading, setLoading] = useState(true);
     const [loadedVideo , setLoadedVideo] = useState(0);
 
-    const NbrVideo = 4;
+    const heroVideos = [
+        "videos/EldinRing-1.mp4",
+        "videos/EldinRing-2.mp4",
+    ];
+    const NbrVideo = heroVideos.length;
     const nextVideoRef = useRef(null);
 
     const comingVideoIndex = (current % NbrVideo) + 1;
@@ -80,11 +84,12 @@ const HeroSection = () => {
         if (loadedVideo === NbrVideo - 1) {
             setLoading(false);
         }
-    }, [loadedVideo]);
+    }, [loadedVideo, NbrVideo]);
 
     gsap.registerPlugin(ScrollTrigger);
 
-    const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) =>
+        heroVideos[(index - 1 + NbrVideo) % NbrVideo];
 
     return (
         <div className="relative w-screen h-dvh overflow-x-hidden">
