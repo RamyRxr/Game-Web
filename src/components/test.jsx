@@ -8,7 +8,13 @@ import { TiLocationArrow } from 'react-icons/ti';
 import { useWindowScroll } from 'react-use';
 
 
-const navItems = ['Nexus' , 'Vault' , 'Prologue' , 'About' , 'Contact' ];
+const navItems = [
+  { name: "Home", id: "hero" },
+  { name: "About", id: "about" },
+  { name: "Discover", id: "features" },
+  { name: "Story", id: "story" },
+  { name: "Contact", id: "contact" },
+];
 
 
 
@@ -80,8 +86,8 @@ function NavBar() {
                     <div className="flex h-full items-center">
                         <div className="hidden md:block">
                             {navItems.map((item) => (
-                                <a key={item} className="nav-hover-btn" href={`#${item.toLowerCase()}`}>
-                                    {item}
+                                <a key={item.id} className="nav-hover-btn" href={`#${item.id}`}>
+                                    {item.name}
                                 </a>
                             ))}
                         </div>

@@ -92,7 +92,7 @@ const HeroSection = () => {
         heroVideos[(index - 1 + NbrVideo) % NbrVideo];
 
     return (
-        <div className="relative w-screen h-dvh overflow-x-hidden">
+        <div id="hero" className="relative w-screen h-dvh overflow-x-hidden">
             
             {loading && (
                 <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden gb-purple-50">
