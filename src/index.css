@@ -32,11 +32,29 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "General Sans", sans-serif;
     width: 100dvw;
     background-color: #3f3f46; 
     overflow-x: hidden;
+}
+
+#hero,
+#about,
+#features,
+#story,
+#contact {
+    scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 

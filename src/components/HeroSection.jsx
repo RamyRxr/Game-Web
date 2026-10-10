@@ -81,7 +81,7 @@ const HeroSection = () => {
     })
 
     useEffect(() => {
-        if (loadedVideo === NbrVideo - 1) {
+        if (loadedVideo >= NbrVideo - 1) {
             setLoading(false);
         }
     }, [loadedVideo, NbrVideo]);
